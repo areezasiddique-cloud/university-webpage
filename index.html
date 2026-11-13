@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover academic programs, departments and admissions at Crescent University.">
+  <title>Crescent University | Learn. Lead. Inspire.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <div class="topline"><span>Knowledge • Community • Opportunity</span><span>Admissions Open 2026</span></div>
+    <div class="brand-wrap">
+      <a class="brand" href="#home" aria-label="Crescent University home">
+        <span class="brand-mark">CU</span>
+        <span><strong>CRESCENT UNIVERSITY</strong><small>Learn. Lead. Inspire.</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#departments">Departments</a>
+        <a href="#programs">Programs</a><a href="#admissions">Admissions</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR FUTURE STARTS HERE</p>
+        <h1>Discover your potential.<br><em>Shape the future.</em></h1>
+        <p>Build knowledge, develop confidence and turn your ambitions into meaningful achievements at Crescent University.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#programs">Explore Programs</a><a class="text-link" href="#admissions">Apply for Admission →</a></div>
+      </div>
+      <div class="hero-image"><img src="images/campus.svg" alt="Illustration of a modern university campus"></div>
+    </section>
+  </header>
+
+  <main>
+    <section class="intro section" id="about">
+      <div class="section-heading"><p class="eyebrow">WELCOME TO CRESCENT</p><h2>A place to learn and grow</h2></div>
+      <p class="intro-text">Crescent University is a fictional university website created for an academic web-design assignment. Our campus experience brings together thoughtful teaching, practical learning and a supportive student community.</p>
+      <div class="stats"><div><strong>5+</strong><span>Academic Departments</span></div><div><strong>4</strong><span>Featured Programs</span></div><div><strong>1</strong><span>Goal: Your Success</span></div></div>
+    </section>
+
+    <section class="feature-section section">
+      <div class="feature-image"><img src="images/library.svg" alt="Illustration of a bright university library"></div>
+      <div class="feature-copy"><p class="eyebrow">CAMPUS LIFE</p><h2>Ideas become impact here.</h2><p>Explore new interests, collaborate with classmates and learn in an environment designed to encourage curiosity. From the library to student activities, every experience can help you take your next step.</p><a class="under-link" href="#admissions">Become part of our community →</a></div>
+    </section>
+
+    <section class="section departments" id="departments">
+      <div class="section-heading"><p class="eyebrow">WHAT YOU CAN STUDY</p><h2>Our departments</h2><p>Choose a field that inspires you.</p></div>
+      <div class="department-grid">
+        <article class="dept-card"><span>01</span><h3>Computer Science</h3><p>Computing, software and emerging technologies.</p></article>
+        <article class="dept-card"><span>02</span><h3>Business Administration</h3><p>Management, entrepreneurship and leadership.</p></article>
+        <article class="dept-card"><span>03</span><h3>Electrical Engineering</h3><p>Electronics, systems and applied engineering.</p></article>
+        <article class="dept-card"><span>04</span><h3>Media & Communication</h3><p>Media, storytelling and digital communication.</p></article>
+        <article class="dept-card"><span>05</span><h3>Social Sciences</h3><p>People, society and the world around us.</p></article>
+      </div>
+    </section>
+
+    <section class="program-section section" id="programs">
+      <div class="section-heading"><p class="eyebrow">ACADEMIC PATHWAYS</p><h2>Featured programs</h2><p>Program details for this sample university.</p></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Academic Program</th><th>Degree Title</th><th>Duration</th></tr></thead>
+        <tbody>
+          <tr><td>Computer Science</td><td>Bachelor of Science (BS)</td><td>4 Years</td></tr>
+          <tr><td>Business Administration</td><td>Bachelor of Business Administration (BBA)</td><td>4 Years</td></tr>
+          <tr><td>Electrical Engineering</td><td>Bachelor of Engineering (BE)</td><td>4 Years</td></tr>
+          <tr><td>Media & Communication</td><td>Associate Degree</td><td>2 Years</td></tr>
+        </tbody>
+      </table></div>
+      <p class="table-note">Note: These are illustrative program details for the assignment project.</p>
+    </section>
+
+    <section class="admission-section section" id="admissions">
+      <div class="admission-copy"><p class="eyebrow">TAKE THE FIRST STEP</p><h2>Start your university journey.</h2><p>Send an inquiry and our admissions team will be happy to guide you through the next steps.</p><div class="admission-note"> <strong>Admissions inquiry</strong><span>Complete the form and click submit.</span></div></div>
+      <form class="admission-form" id="admissionForm">
+        <h3>Admission Inquiry Form</h3>
+        <label for="fullName">Full Name</label><input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required>
+        <label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="name@example.com" required>
+        <label for="phone">Contact Number</label><input id="phone" name="phone" type="tel" placeholder="Enter contact number" required>
+        <fieldset><legend>Gender</legend><label class="radio-label"><input type="radio" name="gender" value="Female" required> Female</label><label class="radio-label"><input type="radio" name="gender" value="Male"> Male</label><label class="radio-label"><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label></fieldset>
+        <label for="program">Select Program</label><select id="program" name="program" required><option value="">Choose a program</option><option>Computer Science</option><option>Business Administration</option><option>Electrical Engineering</option><option>Media & Communication</option></select>
+        <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="welcome-strip">
+      <div><p class="eyebrow">A WARM WELCOME</p><h2>Ready to begin?</h2><p>Click below to receive a welcome message.</p></div>
+      <button class="btn btn-gold" id="welcomeButton" type="button">Show Welcome Message</button>
+      <p id="welcomeMessage" class="welcome-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">CU</span><span><strong>CRESCENT UNIVERSITY</strong><small>Learn. Lead. Inspire.</small></span></a><p>Learning today. Leading tomorrow.</p></div>
+      <div><h3>Explore</h3><a href="#about">About us</a><a href="#departments">Departments</a><a href="#programs">Programs</a></div>
+      <div><h3>Admissions</h3><a href="#admissions">Inquiry form</a><a href="#home">Back to top</a></div>
+      <div><h3>Contact</h3><p>North Nazimabad, Karachi</p><p>info@crescentuniversity.example</p></div>
+    </div>
+    <div class="copyright">© 2026 Crescent University — Student website project. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
